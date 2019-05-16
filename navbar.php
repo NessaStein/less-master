@@ -1,7 +1,7 @@
 		<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
  		<nav id="nav" class="sb" role="navigation" itemscope="" itemtype="">
 			<ul id="site-menu" class="nav-menu">
-				<li><a <?php if($this->is('index')): ?> class="current"<?php endif; ?> href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a></li>
+				<li><a <?php if($this->is('index')): ?> <?php endif; ?> href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a></li>
 
       <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
         <?php while($pages->next()): ?>
